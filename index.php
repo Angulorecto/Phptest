@@ -17,5 +17,5 @@ fwrite($file, $filecontent);
 // Close the file
 fclose($file);
 
-echo 'File $filename created successfully!';
+echo 'File ' + $filename + ' created successfully!';
 ?>
