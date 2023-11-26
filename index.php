@@ -22,5 +22,10 @@ fwrite($file, $htmlContent);
 // Close the file
 fclose($file);
 
+// Commit and push the changes to GitHub
+exec('git add ' . $fileName);
+exec('git commit -m "Add generated HTML file"');
+exec('git push origin master');
+
 echo "HTML file '$uniqueFileName' has been created successfully.";
 ?>
